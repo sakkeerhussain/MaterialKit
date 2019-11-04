@@ -38,7 +38,7 @@ open class MKNavigationBar: UINavigationBar {
     
     @IBInspectable open override var tintColor: UIColor! {
         didSet {
-            UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: self.tintColor]
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: self.tintColor]
             UINavigationBar.appearance().tintColor = self.tintColor
         }
     }
