@@ -64,7 +64,7 @@ open class MKNavigationBar: UINavigationBar {
         UINavigationBar.appearance().barTintColor = self.color
         UINavigationBar.appearance().backgroundColor = self.tintColor
         UINavigationBar.appearance().tintColor = self.tintColor
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: self.tintColor]
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: self.tintColor]
     }
     
     fileprivate func drawShadow() {
