@@ -1,5 +1,5 @@
-MaterialKit
-===========
+MaterialKit for swift 4
+=======================
 
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
 )](https://developer.apple.com/iphone/index.action)
@@ -146,8 +146,9 @@ Installation
 -----
 * Installation with CocoaPods
 
+	~~pod 'MaterialKit', '~> 0.4'~~
 ```
-	pod 'MaterialKit', '~> 0.4'
+	pod 'MaterialKit', :git => 'https://github.com/sakkeerhussain/MaterialKit', :branch => "swift4"
 ```
 
 * Copying all the files into your project
