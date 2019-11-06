@@ -128,7 +128,7 @@ open class MKSnackbar: UIControl {
         MKSnackbarManager.getInstance().showSnackbar(self)
     }
     
-    open func dismiss() {
+    @objc open func dismiss() {
         if !isShowing || isAnimating {
             return
         }
@@ -186,7 +186,7 @@ open class MKSnackbar: UIControl {
     
     // Mark: Action
     
-    internal func actionButtonClicked(_ sender: AnyObject) {
+    @objc internal func actionButtonClicked(_ sender: AnyObject) {
         performDelegateAction(#selector(MKSnackbarDelegate.actionClicked(_:)))
         if let actionButton = actionButton {
             actionButton.isEnabled = false
