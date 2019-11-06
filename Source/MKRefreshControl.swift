@@ -290,7 +290,7 @@ open class MKRefreshControl: UIControl {
         }
     }
 
-    open func handlePanGestureRecognizer() {
+    @objc open func handlePanGestureRecognizer() {
         if let parentScrollView = self.parentScrollView {
             if parentScrollView.panGestureRecognizer.state == .ended {
                 self.containingScrollViewDidEndDragging(parentScrollView)
