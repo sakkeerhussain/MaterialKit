@@ -373,7 +373,7 @@ open class MKSideDrawerViewController: UIViewController, UIGestureRecognizerDele
         }
     }
 
-    final func didtapContainerView(_ gesture: UITapGestureRecognizer) {
+    @objc final func didtapContainerView(_ gesture: UITapGestureRecognizer) {
         setDrawerState(.closed, animated: true)
     }
 
